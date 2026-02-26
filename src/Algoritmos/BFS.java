@@ -33,7 +33,9 @@ public class BFS {
         System.out.println("|             EJECUCION BFS            |");
         System.out.println("+--------------------------------------+\n");
 
-        // Mientras la cola NO este vacia
+        Scanner scanner = new Scanner(System.in);
+
+// Mientras la cola NO este vacia
         while (!cola.estaVacia()) {
 
             System.out.println("| Paso " + paso + " |-----------------------------");
@@ -68,7 +70,11 @@ public class BFS {
                 }
             }
 
-            System.out.println();
+            // Pausa para avanzar manualmente paso por paso
+            System.out.println("\nPresiona ENTER para continuar...");
+            scanner.nextLine();
+
+            System.out.println(); // Espacio extra visual
             paso++;
         }
 
