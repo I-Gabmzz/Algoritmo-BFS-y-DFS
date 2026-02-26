@@ -44,7 +44,9 @@ public class BFS {
 
             // Se saca el primer nodo (FIFO)
             Nodo actual = cola.desencolar();
-            System.out.println("Sacando nodo: " + actual);
+
+            // Se muestra cual es el nodo actual en esta iteracion
+            System.out.println("Nodo actual: " + actual);
 
             // Si es el nodo objetivo se termina
             if (actual.equals(nodoObjetivo)) {

@@ -44,7 +44,9 @@ public class DFS {
 
             // Se saca el ultimo nodo (LIFO)
             Nodo actual = pila.desapilar();
-            System.out.println("Sacando nodo: " + actual);
+
+            // Se muestra cual es el nodo actual en esta iteracion
+            System.out.println("Nodo actual: " + actual);
 
             // Si es el nodo objetivo se termina
             if (actual.equals(nodoObjetivo)) {
